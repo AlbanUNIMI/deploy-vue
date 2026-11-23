@@ -12,7 +12,8 @@
     "@sap/cds-dk": "^10"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "watch": "cds watch --exclude app/"
   },
   "private": true,
   "cds": {
@@ -21,5 +22,8 @@
         "auth": "xsuaa"
       }
     }
-  }
+  },
+  "workspaces": [
+    "app/*"
+  ]
 }
